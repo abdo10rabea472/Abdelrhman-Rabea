@@ -1,2 +1,174 @@
-# Abdelrhman-Rabea
-Software Engineer &amp; Full-Stack Laravel/PHP Developer building modern web applications, digital products, e-commerce platforms, and scalable backend systems.
+# عبدالرحمن ربيع | Abdelrhman Rabea
+### Software Engineer | Full-Stack Laravel & PHP Developer
+
+📍 سمالوط، المنيا، مصر — متاح للعمل عالميًا (Cairo/remote)
+🌐 الموقع الرسمي: https://abdorabea.cloud
+
+---
+
+## 📌 نبذة عني
+
+مطور برمجيات متكامل (Full-Stack) ومصمم جرافيك، أكثر من **4 سنوات خبرة** في بناء تطبيقات الويب الحديثة باستخدام PHP وJavaScript وHTML وCSS. خلفية قوية في تصميم UI/UX واستخدام متقدم لأدوات الذكاء الاصطناعي لتعزيز كفاءة التطوير والأتمتة واتخاذ القرارات.
+
+حاصل على ماجستير تنفيذي في القيادة والإدارة، وماجستير مهني في التنمية البشرية.
+
+### أرقام سريعة
+| المؤشر | القيمة |
+|---|---|
+| مشاريع | 48+ |
+| عملاء | 36+ |
+| سنوات خبرة | 4+ |
+| تقنيات مستخدمة | 40+ |
+| نماذج AI تم التعامل معها | 12+ |
+| دول تم التعامل مع عملاء منها | 6+ |
+
+---
+
+## 🎓 التعليم
+
+| السنة | المؤهل | الجهة |
+|---|---|---|
+| 2024 | بكالوريوس نظم المعلومات | المعهد العالي للتكنولوجيا والمعلومات |
+| — | Executive Master's in Leadership & Management (ماجستير تنفيذي في القيادة والإدارة) | — |
+| — | Professional Master in Human Development (ماجستير مهني في التنمية البشرية) | — |
+| — | شهادة تصميم الويب | المعهد القومي للاتصالات |
+| — | CCNA (Cisco Certified Network Associate) | — |
+
+**تخصص بكالوريوس نظم المعلومات:** تركيز على قواعد البيانات، هندسة البرمجيات، وتطوير تطبيقات الويب.
+**الماجستير التنفيذي:** برنامج متقدم في القيادة الاستراتيجية والإدارة التنفيذية.
+**ماجستير التنمية البشرية:** يشمل مهارات الاتصال والقيادة والتفاوض والإقناع.
+
+---
+
+## 🏆 التقديرات والجوائز
+
+- 🥇 أفضل مبرمج Desktop في صعيد مصر
+- 🥇 المركز الأول - المسابقة الوطنية للبرمجة (وزارة الاتصالات وتكنولوجيا المعلومات)
+- ✅ شهادة Google المعتمدة في المهارات الرقمية
+
+---
+
+## 📜 الشهادات (6 شهادات)
+
+1. تصميم مواقع المستوى الأول — شهادة معتمدة في البرمجة والتطوير
+2. شهادة تقدير — أدوبي بريمير (Adobe Premiere)
+3. شهادة تقدير — مايكروسوفت أكسس (Microsoft Access)
+4. شهادة إنجاز — أساسيات الشبكات
+5. شهادة إنجاز — برنامج تدريبي CCNA
+6. شهادة إنجاز — منحة وزارة الاتصالات (NTI)
+
+---
+
+## 🧠 المهارات
+
+### البرمجة والتطوير
+| المهارة | المستوى |
+|---|---|
+| PHP | 92% |
+| Laravel | 90% |
+| JavaScript | 85% |
+| C# | 78% |
+| MySQL | 88% |
+| SQL Server | 75% |
+| Git | 86% |
+| GitHub | 86% |
+| HTML5 | 95% |
+| CSS3 | 92% |
+| Bootstrap | 90% |
+| jQuery | 84% |
+
+### التصميم والجرافيك
+Photoshop 88% · Illustrator 78% · Adobe XD 74% · Figma 82% · Canva 90%
+
+### المونتاج والفيديو
+After Effects 72% · Premiere Pro 78% · Filmora 85% · CapCut 88% · Final Cut 65% · Camtasia 80%
+
+### القيادة والإدارة
+القيادة الاستراتيجية 90% · إدارة التغيير 84% · إدارة المشاريع 88% · ريادة الأعمال 82% · التحول الرقمي 86% · اتخاذ القرارات 89%
+
+### التقنيات الأساسية (أدوات التنفيذ)
+Laravel · PHP · Python · OpenAI · TensorFlow · Vue · React · MySQL · Docker · AWS · Node.js · Tailwind CSS
+
+---
+
+## 🛠️ الخدمات المقدَّمة
+
+| # | الخدمة | الوصف |
+|---|---|---|
+| 01 | تطوير مواقع | بناء مواقع احترافية سريعة وآمنة |
+| 02 | تطوير أنظمة | أنظمة أعمال متكاملة قابلة للتوسع |
+| 03 | تطبيقات ويب | تطبيقات ويب حديثة بتجربة استخدام ممتازة |
+| 04 | الذكاء الاصطناعي | دمج نماذج ووكلاء ذكاء اصطناعي في المنتجات |
+| 05 | Chatbots | مساعدات محادثة مخصصة لسياق العمل |
+| 06 | Automation | أتمتة المهام والعمليات المتكررة |
+
+### مختبر الذكاء الاصطناعي (AI Lab)
+AI Agents · نماذج الذكاء الاصطناعي · ChatGPT Integration · Automation · Computer Vision · NLP
+
+---
+
+## 💼 المشاريع والمنتجات المميزة
+
+### منتجات رقمية للبيع
+| المنتج | التقنيات | يبدأ من |
+|---|---|---|
+| سكربت متجر رقمي متكامل — بيع منتجات رقمية مع تحميل فوري | Laravel 12 / PHP 8.2+ / MySQL / Tailwind CSS | $99 |
+| لوحة تحكم العملات الرقمية الاحترافية — تصميم Glassmorphism، وضع ليلي/نهاري، رسوم بيانية تفاعلية | HTML5 / CSS3 / JavaScript (ES6+) / Chart.js | $20 |
+| Smart Market — نظام متكامل لنقاط البيع وإدارة المخزون والمطاعم | Laravel / MySQL / Inertia / Vue.js | $130 |
+
+### أرشيف مشاريع إضافية
+- نظام إدارة الحجوزات
+- نظام إدارة المبيعات
+- نظام إدارة المخزون
+- منصة تعليمية إلكترونية
+
+> الأرشيف الكامل والمشاريع متاحة على: https://abdorabea.cloud/projects و https://abdorabea.cloud/works
+
+---
+
+## 📞 التواصل والحسابات الرسمية
+
+| المنصة | الرابط |
+|---|---|
+| 🌐 الموقع الرسمي | https://abdorabea.cloud |
+| 📧 البريد الإلكتروني | abdol0rabea472@gmail.com |
+| 📱 الهاتف / واتساب | +20 01068694941 |
+| 💬 واتساب مباشر | https://wa.me/201068694941 |
+| 💼 LinkedIn | https://www.linkedin.com/in/abdelrhman-rabea-ali-91b394315 |
+| 💻 GitHub | https://github.com/abdo10rabea472 |
+| ✈️ Telegram | https://t.me/Programming472 |
+| ▶️ YouTube | https://www.youtube.com/@abdelrhman472 |
+| 📘 Facebook | https://www.facebook.com/abdelrhmen.rabea.39/ |
+| 🔬 ORCID | https://orcid.org/0009-0000-0094-5395 |
+
+---
+
+## 🗺️ خريطة صفحات الموقع (للرجوع إليها)
+
+- الرئيسية: https://abdorabea.cloud/
+- المشاريع والمنتجات: https://abdorabea.cloud/projects
+- الأعمال المنجزة: https://abdorabea.cloud/works
+- الخدمات: https://abdorabea.cloud/services
+- من أنا: https://abdorabea.cloud/about
+- السيرة الذاتية: https://abdorabea.cloud/resume
+- الخبرة المهنية: https://abdorabea.cloud/experience
+- التعليم والمؤهلات: https://abdorabea.cloud/education
+- الشهادات: https://abdorabea.cloud/certificates
+- المدونة: https://abdorabea.cloud/blog
+- الأسئلة الشائعة: https://abdorabea.cloud/faq
+- روابطي الرسمية: https://abdorabea.cloud/links
+- تواصل معي: https://abdorabea.cloud/contact
+
+---
+الموقع الرسمي: https://abdorabea.cloud
+البريد الإلكتروني: abdol0rabea472@gmail.com
+الهاتف: +20 01068694941
+واتساب: https://wa.me/201068694941
+LinkedIn: https://www.linkedin.com/in/abdelrhman-rabea-ali-91b394315
+GitHub: https://github.com/abdo10rabea472
+Telegram: https://t.me/Programming472
+YouTube: https://www.youtube.com/@abdelrhman472
+Facebook: https://www.facebook.com/abdelrhmen.rabea.39/
+ORCID: https://orcid.org/0009-0000-0094-5395
+
+*آخر تحديث للبيانات: بناءً على محتوى الموقع الحالي — سبتمبر 2026.*
