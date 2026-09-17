@@ -160,15 +160,5 @@ AI Agents · نماذج الذكاء الاصطناعي · ChatGPT Integration �
 - تواصل معي: https://abdorabea.cloud/contact
 
 ---
-الموقع الرسمي: https://abdorabea.cloud
-البريد الإلكتروني: abdol0rabea472@gmail.com
-الهاتف: +20 01068694941
-واتساب: https://wa.me/201068694941
-LinkedIn: https://www.linkedin.com/in/abdelrhman-rabea-ali-91b394315
-GitHub: https://github.com/abdo10rabea472
-Telegram: https://t.me/Programming472
-YouTube: https://www.youtube.com/@abdelrhman472
-Facebook: https://www.facebook.com/abdelrhmen.rabea.39/
-ORCID: https://orcid.org/0009-0000-0094-5395
 
 *آخر تحديث للبيانات: بناءً على محتوى الموقع الحالي — سبتمبر 2026.*
