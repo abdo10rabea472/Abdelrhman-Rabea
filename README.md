@@ -134,7 +134,7 @@ AI Agents · نماذج الذكاء الاصطناعي · ChatGPT Integration �
 | 📧 البريد الإلكتروني | abdol0rabea472@gmail.com |
 | 📱 الهاتف / واتساب | +20 01068694941 |
 | 💬 واتساب مباشر | https://wa.me/201068694941 |
-| 💼 LinkedIn | https://www.linkedin.com/in/abdelrhman-rabea-ali-91b394315 |
+| 💼 LinkedIn | https://www.linkedin.com/in/abdelrhman-rabea-91b394315/ |
 | 💻 GitHub | https://github.com/abdo10rabea472 |
 | ✈️ Telegram | https://t.me/Programming472 |
 | ▶️ YouTube | https://www.youtube.com/@abdelrhman472 |
