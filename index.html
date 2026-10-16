@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عبدالرحمن ربيع | مطوّر Laravel Full-Stack</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050816;--bg2:#0b1230;--card:rgba(16,24,58,.62);--line:rgba(120,200,255,.18);--ink:#eaf0ff;--mute:#9aa7d0;--a:#6ee7ff;--b:#8b6bff;--hot:#ffb347;--wa:#25d366;--nav:rgba(8,13,36,.72);--glow:rgba(110,231,255,.35);
+--f:'IBM Plex Sans Arabic',system-ui,sans-serif;--d:'Space Grotesk','IBM Plex Sans Arabic',sans-serif;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef2fc;--bg2:#dfe7fb;--card:rgba(255,255,255,.82);--line:rgba(50,70,170,.2);--ink:#0c1233;--mute:#4a557f;--a:#0a6fb3;--b:#5b3df5;--hot:#b85c00;--nav:rgba(255,255,255,.82);--glow:rgba(91,61,245,.25);color-scheme:light}}
+:root[data-theme="light"]{--bg:#eef2fc;--bg2:#dfe7fb;--card:rgba(255,255,255,.82);--line:rgba(50,70,170,.2);--ink:#0c1233;--mute:#4a557f;--a:#0a6fb3;--b:#5b3df5;--hot:#b85c00;--nav:rgba(255,255,255,.82);--glow:rgba(91,61,245,.25);color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.8 var(--f);overflow-x:hidden;transition:background .3s,color .3s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+#net{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.gridbg{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/48px 48px;opacity:.35;mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 70%)}
+main,footer{position:relative;z-index:1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+/* header */
+header{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);inset-inline:0;z-index:50;padding:0 12px}
+.bar{max-width:1100px;margin:auto;display:flex;align-items:center;gap:14px;padding:8px 10px 8px 14px;border:1px solid var(--line);border-radius:20px;background:var(--nav);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 40px -12px var(--glow)}
+.logo{display:flex;align-items:center;gap:10px;font:700 16px var(--d);flex:none}
+.hex{width:38px;height:42px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;color:#050816;font:700 14px var(--d)}
+.logo small{display:block;font:400 11px var(--f);color:var(--mute);line-height:1.2}
+nav{flex:1;display:flex;justify-content:center;gap:4px}
+nav a{padding:7px 14px;border-radius:12px;font-size:15px;color:var(--mute);transition:.2s}
+nav a:hover,nav a.on{color:var(--ink);background:color-mix(in srgb,var(--b) 18%,transparent)}
+.ibtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font-size:17px;flex:none;display:grid;place-items:center}
+.cta{padding:9px 18px;border-radius:12px;background:linear-gradient(120deg,var(--b),var(--a));color:#050816;font-weight:700;font-size:15px;flex:none}
+#bg{display:none}
+@media(max-width:860px){nav{position:absolute;top:66px;inset-inline:12px;flex-direction:column;padding:10px;border:1px solid var(--line);border-radius:18px;background:var(--nav);backdrop-filter:blur(18px);display:none}
+nav.open{display:flex}#bg{display:grid}.bar{justify-content:space-between}.cta{display:none}.logo small{display:none}}
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:120px 0 60px}
+.hero .wrap{display:grid;gap:40px;grid-template-columns:1.1fr .9fr;align-items:center}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.pill{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border:1px solid var(--line);border-radius:99px;font-size:14px;color:var(--mute);background:var(--card)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 10px var(--wa);animation:pu 1.8s infinite}
+@keyframes pu{50%{opacity:.35}}
+h1{font:700 clamp(40px,8vw,84px)/1.12 var(--f);margin:18px 0 10px;color:var(--ink);text-shadow:0 0 40px var(--glow)}
+.role{font:500 clamp(17px,3vw,25px) var(--d);color:var(--a);direction:ltr;text-align:right;min-height:1.7em}
+.role::after{content:"▌";color:var(--hot);animation:bk 1s steps(2) infinite}
+@keyframes bk{50%{opacity:0}}
+.lead{color:var(--mute);max-width:58ch;margin:16px 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:12px 24px;border-radius:14px;border:1px solid var(--line);background:var(--card);font-weight:600;transition:.25s;backdrop-filter:blur(8px)}
+.btn.p{background:linear-gradient(120deg,var(--b),var(--a));color:#050816;border:0}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px -10px var(--glow)}
+.term{direction:ltr;border:1px solid var(--line);border-radius:20px;background:var(--card);backdrop-filter:blur(14px);font:400 14px/1.9 ui-monospace,Menlo,monospace;box-shadow:0 30px 80px -30px var(--glow);overflow:hidden}
+.term .t{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.term .t i{width:11px;height:11px;border-radius:50%;background:var(--mute);opacity:.6}
+.term pre{padding:16px 18px;white-space:pre-wrap;color:var(--mute)}
+.term b{color:var(--a);font-weight:400}.term u{color:var(--hot);text-decoration:none}.term em{color:var(--b);font-style:normal}
+section{padding:70px 0}
+h2{font:700 clamp(26px,4.5vw,40px)/1.25 var(--f);margin-bottom:30px;display:flex;align-items:center;gap:14px}
+h2::before{content:"";width:6px;height:34px;border-radius:6px;background:linear-gradient(var(--a),var(--b));box-shadow:0 0 14px var(--glow)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;backdrop-filter:blur(10px);position:relative;overflow:hidden;transition:.3s;display:block}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(240px circle at var(--x,50%) var(--y,0),var(--glow),transparent 65%);opacity:0;transition:.3s}
+a.card:hover,.card:hover{border-color:var(--a)}.card:hover::before{opacity:1}
+.card>*{position:relative}
+.card h3{font-size:19px;margin-bottom:4px}.card p{color:var(--mute);font-size:15px;line-height:1.7}
+.stat{text-align:center}.stat strong{display:block;font:700 44px/1.1 var(--d);color:var(--a)}.stat span{color:var(--mute);font-size:14px}
+.bars{display:grid;gap:14px 30px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-bottom:26px}
+.bar2{direction:ltr}.bar2 div{display:flex;justify-content:space-between;font:500 14px var(--d);margin-bottom:5px}
+.bar2 i{display:block;height:7px;border-radius:7px;background:var(--bg2);overflow:hidden}
+.bar2 i::after{content:"";display:block;height:100%;width:0;border-radius:7px;background:linear-gradient(90deg,var(--b),var(--a));transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.bar2.on i::after{width:var(--w)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips span{font:500 13px var(--d);padding:4px 12px;border:1px solid var(--line);border-radius:99px;color:var(--a);background:var(--card)}
+.sub{font-size:17px;color:var(--hot);margin:22px 0 6px;font-weight:600}
+.price{font:700 22px var(--d);color:var(--hot);direction:ltr;display:inline-block}
+.go{font-size:14px;color:var(--a);margin-top:8px;display:block}
+.tl{border-inline-start:2px solid var(--line);padding-inline-start:26px;display:grid;gap:20px}
+.tl div{position:relative}.tl div::before{content:"";position:absolute;inset-inline-start:-34px;top:9px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--a);box-shadow:0 0 12px var(--a)}
+.tl small{font:600 14px var(--d);color:var(--hot)}.tl h3{font-size:18px}.tl p{color:var(--mute);font-size:15px}
+.lk b{font:600 13px var(--d);color:var(--a);direction:ltr;display:block;word-break:break-all;margin-top:4px}
+.mini{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.mini a{padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);font-size:15px;transition:.2s}.mini a:hover{border-color:var(--a);transform:translateY(-2px)}
+footer{text-align:center;padding:40px 20px 110px;color:var(--mute);font-size:14px;border-top:1px solid var(--line);margin-top:40px}
+/* FAB */
+.fab{position:fixed;z-index:55;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);display:flex;flex-direction:column;align-items:center;gap:10px}
+.fab .m{display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(14px) scale(.9);pointer-events:none;transition:.25s}
+.fab.open .m{opacity:1;transform:none;pointer-events:auto}
+.fab a,.fab button{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:22px;border:0;cursor:pointer;box-shadow:0 8px 24px -6px rgba(0,0,0,.5)}
+.fab .wa{background:var(--wa)}.fab .tel{background:#2f80ed}.fab .ml{background:#e0533d}.fab .tg{background:#229ed9}
+.fab .main{width:60px;height:60px;background:linear-gradient(135deg,var(--b),var(--a));color:#050816;font-size:26px;position:relative}
+.fab .main::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--a);animation:rg 2.2s infinite}
+@keyframes rg{from{transform:scale(1);opacity:.8}to{transform:scale(1.6);opacity:0}}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bar2 i::after{width:var(--w)}}
+</style>
+<script>try{var s=localStorage.getItem('th');if(s)document.documentElement.dataset.theme=s}catch(e){}</script>
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas><div class="gridbg"></div>
+<header><div class="bar">
+  <a class="logo" href="#top"><span class="hex">AR</span><span>Abdelrhman Rabea<small>Full-Stack Laravel Developer</small></span></a>
+  <nav id="nav"><a href="#about">نبذة</a><a href="#services">الخدمات</a><a href="#skills">المهارات</a><a href="#work">المنتجات</a><a href="#edu">التعليم</a><a href="#links">الروابط</a></nav>
+  <button class="ibtn" id="th" aria-label="تبديل الوضع الليلي والنهاري">◐</button>
+  <a class="cta" href="https://abdorabea.cloud/contact" target="_blank" rel="noopener">تواصل معي</a>
+  <button class="ibtn" id="bg" aria-label="القائمة">☰</button>
+</div></header>
 
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="pill"><i></i>متاح للعمل عالميًا — Cairo / Remote</span>
+    <h1>عبدالرحمن ربيع</h1>
+    <div class="role" id="role"></div>
+    <p class="lead">مطور برمجيات متكامل ومصمم جرافيك بخبرة أكثر من 4 سنوات في بناء تطبيقات الويب الحديثة بـ PHP وJavaScript، وبخلفية قوية في UI/UX واستخدام متقدم للذكاء الاصطناعي في التطوير والأتمتة.</p>
+    <div class="btns"><a class="btn p" href="https://abdorabea.cloud/projects" target="_blank" rel="noopener">المشاريع والمنتجات</a><a class="btn" href="https://abdorabea.cloud/resume" target="_blank" rel="noopener">السيرة الذاتية</a></div>
+  </div>
+  <div class="term rv"><div class="t"><i></i><i></i><i></i></div><pre><b>$</b> php artisan whoami
+<u>name</u>:     عبدالرحمن ربيع
+<u>stack</u>:    <em>Laravel · PHP · JS · MySQL</em>
+<u>ai</u>:       <em>Agents · Chatbots · Automation</em>
+<u>base</u>:     Samalut, Minya, Egypt
+<u>status</u>:   <b>● open to work</b></pre></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="grid" id="stats"></div></div></section>
+
+<section id="services"><div class="wrap"><h2 class="rv">الخدمات</h2><div class="grid" id="svc"></div>
+<div class="sub">مختبر الذكاء الاصطناعي (AI Lab)</div><div class="chips" id="ai"></div></div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv">المهارات</h2><div class="bars" id="dev"></div><div id="more"></div></div></section>
+
+<section id="work"><div class="wrap"><h2 class="rv">المشاريع والمنتجات</h2><div class="grid" id="prod"></div>
+<div class="sub">أرشيف مشاريع إضافية</div><div class="chips" id="arch"></div>
+<div class="btns" style="margin-top:22px"><a class="btn p" href="https://abdorabea.cloud/projects" target="_blank" rel="noopener">كل المشاريع والمنتجات</a><a class="btn" href="https://abdorabea.cloud/works" target="_blank" rel="noopener">الأعمال المنجزة</a></div></div></section>
+
+<section id="edu"><div class="wrap"><h2 class="rv">التعليم والإنجازات</h2><div class="tl" id="tl"></div>
+<div class="sub">التقديرات والجوائز</div><div class="grid" id="aw"></div>
+<div class="sub">الشهادات (6)</div><div class="grid" id="cert"></div></div></section>
+
+<section id="links"><div class="wrap"><h2 class="rv">التواصل والحسابات الرسمية</h2><div class="grid" id="lk"></div>
+<div class="sub">صفحات الموقع</div><div class="mini" id="map"></div></div></section>
+</main>
+<footer>© عبدالرحمن ربيع — سمالوط، المنيا، مصر — <a href="https://abdorabea.cloud" target="_blank" rel="noopener" style="color:var(--a)">abdorabea.cloud</a></footer>
+
+<div class="fab" id="fab"><div class="m">
+  <a class="wa" href="https://wa.me/201068694941" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+  <a class="tel" href="tel:+201068694941" aria-label="اتصال">📞</a>
+  <a class="ml" href="mailto:abdol0rabea472@gmail.com" aria-label="بريد">✉</a>
+  <a class="tg" href="https://t.me/Programming472" target="_blank" rel="noopener" aria-label="تيليجرام">✈</a></div>
+  <button class="main" aria-label="تواصل معي" aria-expanded="false">☎</button></div>
+
+<script>
+const S='https://abdorabea.cloud',$=id=>document.getElementById(id);
+const L=(u,c,h)=>`<a class="${c}" href="${u}" target="_blank" rel="noopener">${h}</a>`;
+$('stats').innerHTML=[[48,'مشروع'],[36,'عميل'],[4,'سنوات خبرة'],[40,'تقنية مستخدمة'],[12,'نموذج ذكاء اصطناعي'],[6,'دول للعملاء']].map(([n,t])=>`<div class="card stat rv"><strong data-n="${n}">0</strong><span>${t}</span></div>`).join('');
+$('svc').innerHTML=[['تطوير مواقع','بناء مواقع احترافية سريعة وآمنة'],['تطوير أنظمة','أنظمة أعمال متكاملة قابلة للتوسع'],['تطبيقات ويب','تطبيقات حديثة بتجربة استخدام ممتازة'],['الذكاء الاصطناعي','دمج نماذج ووكلاء ذكاء اصطناعي في المنتجات'],['Chatbots','مساعدات محادثة مخصصة لسياق العمل'],['Automation','أتمتة المهام والعمليات المتكررة']].map(([a,b])=>L(S+'/services','card rv',`<h3>${a}</h3><p>${b}</p><span class="go">التفاصيل في الموقع ‹</span>`)).join('');
+const chips=a=>a.map(x=>`<span>${x}</span>`).join('');
+$('ai').innerHTML=chips(['AI Agents','نماذج الذكاء الاصطناعي','ChatGPT Integration','Automation','Computer Vision','NLP']);
+const dev=[['PHP',92],['Laravel',90],['JavaScript',85],['C#',78],['MySQL',88],['SQL Server',75],['Git',86],['GitHub',86],['HTML5',95],['CSS3',92],['Bootstrap',90],['jQuery',84]];
+const bars=a=>a.map(([n,v])=>`<div class="bar2 rv" style="--w:${v}%"><div><span>${n}</span><span>${v}%</span></div><i></i></div>`).join('');
+$('dev').innerHTML=bars(dev);
+const grp=[['التصميم والجرافيك',[['Photoshop',88],['Illustrator',78],['Adobe XD',74],['Figma',82],['Canva',90]]],['المونتاج والفيديو',[['After Effects',72],['Premiere Pro',78],['Filmora',85],['CapCut',88],['Final Cut',65],['Camtasia',80]]],['القيادة والإدارة',[['القيادة الاستراتيجية',90],['إدارة التغيير',84],['إدارة المشاريع',88],['ريادة الأعمال',82],['التحول الرقمي',86],['اتخاذ القرارات',89]]]];
+$('more').innerHTML=grp.map(([t,a])=>`<div class="sub">${t}</div><div class="bars">${bars(a)}</div>`).join('')+`<div class="sub">التقنيات الأساسية</div><div class="chips">${chips(['Laravel','PHP','Python','OpenAI','TensorFlow','Vue','React','MySQL','Docker','AWS','Node.js','Tailwind CSS'])}</div>`;
+const P=[['سكربت متجر رقمي متكامل','بيع منتجات رقمية مع تحميل فوري',['Laravel 12','PHP 8.2+','MySQL','Tailwind CSS'],'$99'],['لوحة تحكم العملات الرقمية','تصميم Glassmorphism، وضع ليلي/نهاري، رسوم بيانية تفاعلية',['HTML5','CSS3','JavaScript','Chart.js'],'$20'],['Smart Market','نظام نقاط بيع وإدارة مخزون ومطاعم',['Laravel','MySQL','Inertia','Vue.js'],'$130']];
+$('prod').innerHTML=P.map(([t,d,g,p])=>L(S+'/projects','card rv',`<h3>${t}</h3><p>${d}</p><div class="chips">${chips(g)}</div><div style="margin-top:12px"><span class="price">يبدأ من ${p}</span></div><span class="go">افتح المشروع في الموقع ‹</span>`)).join('');
+$('arch').innerHTML=['نظام إدارة الحجوزات','نظام إدارة المبيعات','نظام إدارة المخزون','منصة تعليمية إلكترونية'].map(x=>`<a href="${S}/projects" target="_blank" rel="noopener" style="display:contents"><span>${x}</span></a>`).join('');
+$('tl').innerHTML=[['2026','CCNA — Cisco Certified Network Associate','سيسكو'],['2025 / 2026','ماجستير مهني في التنمية البشرية','كلية ستانفورد، المملكة المتحدة — 300 ساعة: الاتصال والقيادة والتفاوض والإقناع'],['2025','ماجستير تنفيذي في القيادة والإدارة','أكاديمية اطلاقة — القيادة الاستراتيجية والإدارة التنفيذية'],['2024','بكالوريوس نظم المعلومات','المعهد العالي للتكنولوجيا والمعلومات — قواعد البيانات وهندسة البرمجيات وتطوير تطبيقات الويب'],['2022','شهادة تصميم الويب','المعهد القومي للاتصالات']].map(([y,t,d])=>`<div class="rv"><small>${y}</small><h3>${t}</h3><p>${d}</p></div>`).join('');
+$('aw').innerHTML=[['🥇','أفضل مبرمج Desktop في صعيد مصر'],['🥇','المركز الأول — المسابقة الوطنية للبرمجة (وزارة الاتصالات وتكنولوجيا المعلومات)'],['✅','شهادة Google المعتمدة في المهارات الرقمية']].map(([i,t])=>L(S+'/certificates','card rv',`<h3>${i}</h3><p>${t}</p>`)).join('');
+$('cert').innerHTML=['تصميم مواقع المستوى الأول — شهادة معتمدة في البرمجة والتطوير','شهادة تقدير — أدوبي بريمير (Adobe Premiere)','شهادة تقدير — مايكروسوفت أكسس (Microsoft Access)','شهادة إنجاز — أساسيات الشبكات','شهادة إنجاز — برنامج تدريبي CCNA','شهادة إنجاز — منحة وزارة الاتصالات (NTI)'].map(t=>L(S+'/certificates','card rv',`<p style="color:var(--ink)">${t}</p>`)).join('');
+$('lk').innerHTML=[['🌐 الموقع الرسمي',S,'abdorabea.cloud'],['📧 البريد','mailto:abdol0rabea472@gmail.com','abdol0rabea472@gmail.com'],['📱 الهاتف / واتساب','tel:+201068694941','+20 01068694941'],['💬 واتساب مباشر','https://wa.me/201068694941','wa.me/201068694941'],['💼 LinkedIn','https://www.linkedin.com/in/abdelrhman-rabea-91b394315/','abdelrhman-rabea'],['💻 GitHub','https://github.com/abdo10rabea472','abdo10rabea472'],['✈️ Telegram','https://t.me/Programming472','@Programming472'],['▶️ YouTube','https://www.youtube.com/@abdelrhman472','@abdelrhman472'],['📘 Facebook','https://www.facebook.com/abdelrhmen.rabea.39/','abdelrhmen.rabea.39'],['🔬 ORCID','https://orcid.org/0009-0000-0094-5395','0009-0000-0094-5395']].map(([t,u,s])=>L(u,'card lk rv',`<h3>${t}</h3><b>${s}</b>`)).join('');
+$('map').innerHTML=[['الرئيسية','/'],['المشاريع والمنتجات','/projects'],['الأعمال المنجزة','/works'],['الخدمات','/services'],['من أنا','/about'],['السيرة الذاتية','/resume'],['الخبرة المهنية','/experience'],['التعليم والمؤهلات','/education'],['الشهادات','/certificates'],['المدونة','/blog'],['الأسئلة الشائعة','/faq'],['روابطي الرسمية','/links'],['تواصل معي','/contact']].map(([t,p])=>L(S+p,'',t)).join('');
+// reveal + counters + bars
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('on');const s=t.querySelector('[data-n]');if(s){const n=+s.dataset.n;let c=0;const id=setInterval(()=>{c=Math.min(n,c+Math.ceil(n/30));s.textContent=c+'+';if(c>=n)clearInterval(id)},35)}io.unobserve(t)}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+// typing
+const R=['Full-Stack Laravel Developer','AI Automation Builder','UI/UX & Graphic Designer'];let ri=0,ci=0,dl=false;
+(function k(){const w=R[ri];$('role').textContent=w.slice(0,ci);if(!dl&&ci===w.length){dl=true;return setTimeout(k,1600)}if(dl&&ci===0){dl=false;ri=(ri+1)%R.length}ci+=dl?-1:1;setTimeout(k,dl?35:70)})();
+// spotlight
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{const b=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-b.left+'px');c.style.setProperty('--y',e.clientY-b.top+'px')}));
+// theme
+const root=document.documentElement;
+$('th').onclick=()=>{const d=getComputedStyle(root).colorScheme.indexOf('dark')>-1,n=d?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('th',n)}catch(e){}};
+// menu + fab
+$('bg').onclick=()=>$('nav').classList.toggle('open');$('nav').onclick=()=>$('nav').classList.remove('open');
+const fab=$('fab'),mb=fab.querySelector('.main');mb.onclick=()=>{const o=fab.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'✕':'☎'};
+// network
+const cv=$('net'),x=cv.getContext('2d');let W,H,Q=[],m={x:-999,y:-999};const rs=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function sz(){W=cv.width=innerWidth;H=cv.height=innerHeight;Q=Array.from({length:Math.min(80,Math.floor(W*H/18000))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))}
+addEventListener('resize',sz);addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY});sz();
+const cs=n=>getComputedStyle(root).getPropertyValue(n).trim();
+(function d(){x.clearRect(0,0,W,H);const a=cs('--a'),b=cs('--b');
+for(const p of Q){if(!rs){p.x+=p.vx;p.y+=p.vy}if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;const dx=p.x-m.x,dy=p.y-m.y,r=Math.hypot(dx,dy);if(r<130&&!rs){p.x+=dx/r*1.4;p.y+=dy/r*1.4}x.globalAlpha=.8;x.fillStyle=a;x.beginPath();x.arc(p.x,p.y,1.7,0,6.3);x.fill()}
+for(let i=0;i<Q.length;i++)for(let j=i+1;j<Q.length;j++){const r=Math.hypot(Q[i].x-Q[j].x,Q[i].y-Q[j].y);if(r<130){x.globalAlpha=(1-r/130)*.4;x.strokeStyle=b;x.beginPath();x.moveTo(Q[i].x,Q[i].y);x.lineTo(Q[j].x,Q[j].y);x.stroke()}}
+requestAnimationFrame(d)})();
+</script>
+</body>
+</html>
